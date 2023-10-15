@@ -9,6 +9,8 @@ packages = [{include = "pydash_cheatsheet"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 mkdocs-material = "^9.4.6"
+pydash = "^7.0.6"
+black = "^23.9.1"
 
 
 [build-system]
