@@ -20,6 +20,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-macros-plugin
+      - run: pip install mkdocs-material mkdocs-macros-plugin
+      - run: pip install mkdocs-macros-plugin mkdocs-material-extensions mkdocs-redirects
       - run: mkdocs gh-deploy --force
