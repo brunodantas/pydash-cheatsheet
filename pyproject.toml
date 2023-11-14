@@ -1,17 +1,23 @@
 [tool.poetry]
 name = "pydash-cheatsheet"
 version = "0.1.0"
-description = "A beautiful cheatsheet for pydash"
+description = "A simplified reference for pydash"
 authors = ["brunodantas <brunowelldm@gmail.com>"]
 readme = "README.md"
 packages = [{include = "pydash_cheatsheet"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-mkdocs-material = "^9.4.6"
+mkdocs-material = {extras = ["imaging"], version = "^9.4.8"}
 pydash = "^7.0.6"
 black = "^23.9.1"
+mkdocs-redirects = "^1.2.1"
+mike = "^1.1.2"
+mkdocs-macros-plugin = "^1.0.4"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
 
 [build-system]
 requires = ["poetry-core"]

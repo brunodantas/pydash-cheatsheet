@@ -1,7 +1,16 @@
-site_name: pydash cheatsheet
+site_name: pydash-cheatsheet
+repo_url: https://github.com/brunodantas/pydash-cheatsheet
 
 theme:
   name: material
+  language: en
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - announce.dismiss
+    - navigation.tabs
+    - toc.integrate
+
   palette:
 
     # Palette toggle for light mode
@@ -13,18 +22,48 @@ theme:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
+      primary: black
       scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
 
-
 extra:
-  alternate:
-    - name: English
-      link: /en/
-      lang: en
-
   social:
   - icon: fontawesome/brands/github
     link: https://github.com/brunodantas/pydash-cheatsheet
+
+  # alternate:
+  #   - name: English
+  #     link: docs/en/
+  #     lang: en
+
+# extra_css:
+#   - 'extra/terminal.css'
+#   - 'extra/tweaks.css'
+
+plugins:
+  - macros
+  - search
+  - social
+  - redirects:
+      redirect_maps:
+        'index.md': 'en/index.md'
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: "#"
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
