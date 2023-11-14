@@ -46,7 +46,7 @@ extra:
 plugins:
   - macros
   - search
-  - social
+  # - social
   - redirects:
       redirect_maps:
         'index.md': 'en/index.md'
