@@ -1,4 +1,5 @@
 site_name: pydash-cheatsheet
+site_url: https://brunodantas.github.io/pydash-cheatsheet/en/
 repo_url: https://github.com/brunodantas/pydash-cheatsheet
 
 theme:
