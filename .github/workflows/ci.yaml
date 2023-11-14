@@ -23,5 +23,5 @@ jobs:
       - run: pip install mkdocs-material mkdocs-macros-plugin
       - run: pip install mkdocs-material-extensions mkdocs-redirects pydash
       - run: pip install "mkdocs-material[imaging]"
-      - run: apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+      - run: sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
       - run: mkdocs gh-deploy --force
