@@ -1,15 +1,14 @@
 from pydash import *
-import maps
+from maps import functions
 
 
 def define_env(env):
-    function_map = maps.functions
-    functions = []
-    for fun in function_map:
+    tuples = []
+    for fun in functions:
         title = fun.function.__name__
         description = fun.description
         example = fun.test_case
         result = eval(example)
         docstring = fun.function.__doc__
-        functions.append((title, description, example, result, docstring))
-    env.variables.functions = functions
+        tuples.append((title, description, example, result, docstring))
+    env.variables.functions = tuples
