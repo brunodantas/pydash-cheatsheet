@@ -9,7 +9,6 @@ theme:
     - content.code.annotate
     - content.code.copy
     - announce.dismiss
-    - navigation.tabs
     - toc.integrate
 
   palette:
